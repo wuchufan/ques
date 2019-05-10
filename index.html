@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EE评分调查问卷</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="body-container">
+
+
+  <div class="marriage">
+    <h2>婚姻 Marriage Information</h2>
+    <label for="">Singled<input type="radio" name="ques-s01" value="singled" checked></label>
+    <label for="">Married<input type="radio" name="ques-s01" value="married" ></label>
+
+  </div>
+
+  <hr>
+  <div class="container">
+
+
+    <div class="section-a">
+
+      <h2>核心/人力资本因素 Core / human capital factors</h2>
+      <div>
+
+
+
+        <div class="form-div">
+        <div class="age">
+
+
+
+          <label>年龄:</label>
+          <input placeholder="请输入年龄" type="number" id="ques-sa1">
+        </div>
+        <div class="education">
+
+            <label for="q1b">教育经历:</label>
+            <select id="q1b">
+              <option value="0">无</option>
+              <option value="1">高中</option>
+              <option value="2">一年高等教育</option>
+              <option value="3">二年高等教育</option>
+              <option value="4">三年以上高等教育</option>
+              <option value="5">两个以上高等教育且其中一个为三年制以上</option>
+              <option value="6">硕士 </option>
+              <option value="7">博士</option>
+            </select>
+
+        </div>
+        <div class="canada-work-experience">
+
+
+            <label for="q1e">加拿大工作经验</label>
+            <select id="q1e" class="" name="">
+              <option value="0">无</option>
+              <option value="1">1年</option>
+              <option value="2">2年</option>
+              <option value="3">3年</option>
+              <option value="4">4年</option>
+              <option value="5">5年或以上</option>
+
+            </select>
+
+
+
+        </div>
+        </div>
+        <div class="language">
+          <div class="language first-language">
+            <h3>第一语言听说读写语言成绩:</h3>
+            <div class="form-div" class="langueage first-language">
+
+              <label>听:</label>
+              <select id="qlangli1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">4.5</option>
+                <option value="2">5</option>
+                <option value="3">5.5</option>
+                <option value="4">6</option>
+                <option value="5">6.5</option>
+                <option value="6">7</option>
+                <option value="7">7.5</option>
+                <option value="8">8</option>
+                <option value="9">8.5或以上</option>
+
+              </select><br>
+
+              <label>说:</label>
+              <select id="qlangsp1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">4.5</option>
+                <option value="2">5</option>
+                <option value="3">5.5</option>
+                <option value="4">6</option>
+                <option value="5">6.5</option>
+                <option value="6">7</option>
+                <option value="7">7.5或以上</option>
+
+              </select><br>
+
+              <label>读:</label>
+              <select id="qlangre1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">3.5</option>
+                <option value="2">4</option>
+                <option value="3">4.5</option>
+                <option value="4">5</option>
+                <option value="5">5.5</option>
+                <option value="6">6</option>
+                <option value="7">6.5</option>
+                <option value="8">7</option>
+                <option value="8">7.5</option>
+                <option value="10">8或以上</option>
+              </select><br>
+
+              <label>写:</label>
+              <select id="qlangwr1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">4</option>
+                <option value="2">4.5</option>
+                <option value="3">5</option>
+                <option value="4">5.5</option>
+                <option value="5">6</option>
+                <option value="6">6.5</option>
+                <option value="7">7</option>
+                <option value="8">7.5或以上</option>
+
+              </select><br>
+
+
+            </div>
+          </div>
+          <!-- <div class="language second-language">
+            <h3>第二语言听说读写语言成绩:</h3>
+            <div class="form-div" class="langueage first-language">
+              <label>听:</label>
+              <select id="qlangli1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">4.5</option>
+                <option value="2">5</option>
+                <option value="3">5.5</option>
+                <option value="4">6</option>
+                <option value="5">6.5</option>
+                <option value="6">7</option>
+                <option value="7">7.5</option>
+                <option value="8">8</option>
+                <option value="9">8.5或以上</option>
+
+              </select><br>
+              <label>说:</label>
+              <select id="qlangsp1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">4.5</option>
+                <option value="2">5</option>
+                <option value="3">5.5</option>
+                <option value="4">6</option>
+                <option value="5">6.5</option>
+                <option value="6">7</option>
+                <option value="7">7.5或以上</option>
+
+              </select><br>
+              <label>读:</label>
+              <select id="qlangre1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">3.5</option>
+                <option value="2">4</option>
+                <option value="3">4.5</option>
+                <option value="4">5</option>
+                <option value="5">5.5</option>
+                <option value="6">6</option>
+                <option value="7">6.5</option>
+                <option value="8">7</option>
+                <option value="8">7.5</option>
+                <option value="10">8或以上</option>
+              </select><br>
+              <label>写:</label>
+              <select id="qlangwr1" class="qlang1" name="">
+                <option value="0">请选择语言分数</option>
+                <option value="1">4</option>
+                <option value="2">4.5</option>
+                <option value="3">5</option>
+                <option value="4">5.5</option>
+                <option value="5">6</option>
+                <option value="6">6.5</option>
+                <option value="7">7</option>
+                <option value="8">7.5或以上</option>
+
+              </select><br>
+
+            </div> -->
+          </div>
+
+        </div>
+
+
+      </div>
+      <hr>
+    </div>
+
+    <div class="section-b">
+      <h2 class="short-title">配偶加分</h2>
+      <div class="form-div">
+      <div class="spouse education">
+
+
+
+
+          <label for="q2a">配偶教育加分:</label>
+          <select id="q2a" class="" name="">
+            <option value="0">无</option>
+            <option value="1">高中</option>
+            <option value="2">一年高等教育</option>
+            <option value="3">二年高等教育</option>
+            <option value="4">三年以上高等教育</option>
+            <option value="5">两个以上高等教育且其中一个为三年制以上</option>
+            <option value="6">硕士 </option>
+            <option value="7">博士</option>
+          </select>
+      </div>
+      <div class="spouse canada-work-experience">
+
+          <label for="q2b">配偶加拿大工作经验</label>
+          <select id="q2b" class="" name="">
+            <option value="0">无</option>
+            <option value="1">1年</option>
+            <option value="2">2年</option>
+            <option value="3">3年</option>
+            <option value="4">4年</option>
+            <option value="5">5年或以上</option>
+
+          </select>
+
+
+      </div>
+      <div class="spouse language">
+        <h3>配偶第一语言加分:</h3>
+
+          <label>听: <select id="q2langli" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">5</option>
+            <option value="2">5.5</option>
+            <option value="3">6</option>
+            <option value="4">6.5</option>
+            <option value="5">7</option>
+            <option value="6">7.5</option>
+            <option value="7">8</option>
+            <option value="8">8.5或以上</option>
+
+          </select> </label><br>
+          <label>说: <select id="q2langsp" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">5</option>
+            <option value="2">5.5</option>
+            <option value="3">6</option>
+            <option value="4">6.5</option>
+            <option value="5">7</option>
+            <option value="6">7.5或以上</option>
+
+          </select> </label><br>
+          <label>读: <select id="q2langre" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">4</option>
+            <option value="2">4.5</option>
+            <option value="3">5</option>
+            <option value="4">5.5</option>
+            <option value="5">6</option>
+            <option value="6">6.5</option>
+            <option value="7">7</option>
+            <option value="8">7.5</option>
+            <option value="9">8或以上</option>
+
+          </select> </label><br>
+          <label>写: <select id="q2langwr" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">5</option>
+            <option value="2">5.5</option>
+            <option value="3">6</option>
+            <option value="4">6.5</option>
+            <option value="5">7</option>
+            <option value="6">7.5或以上</option>
+
+          </select> </label><br>
+
+
+
+      </div>
+
+    </div>
+    <hr>
+    </div>
+
+    <div class="section-c">
+      <h2 class="short-title">其他附加分</h2>
+
+      <div class="mix">
+        <div class="form-div mix-div">
+          <label>海外工作经验:
+            <!-- <input type="number" id ="ques-sc1" name="" value="" placeholder="请输入海外工作年数"> -->
+            <select id="ques-sc1" class="" name="">
+              <option value="0">无</option>
+              <option value="1">1-2年海外工作经验</option>
+              <option value="2">3年及以上海外工作经验</option>
+
+            </select>
+          </label><br>
+          <label>技工职业证书:
+            <select id="ques-sc2">
+              <option value="0">我没有技工职业证书</option>
+              <option value="1">我有技工职业证书</option>
+
+            </select>
+          </label>
+
+        </div>
+        <table>
+          <th colspan="2"><strong>学历 x 加拿大工作经验 x 语言（最高50分)</strong></th>
+          <tr>
+            <td>学历奖励分语言分:</td>
+            <td><span id="c-section1">0</span></td>
+          </tr>
+          <tr>
+            <td>学历奖励分，工作分:</td>
+            <td><span id="c-section2">0</span></td>
+          </tr>
+          <th colspan="2"><strong>加拿大工作经验 x 海外工作经验 x 语言 (最高50分)</strong></th>
+          <tr>
+            <td>海外工作经历，语言分:</td>
+            <td><span id="c-section3">0</span></td>
+
+          </tr>
+          <tr>
+            <td>海外工作分，有加拿大工作:</td>
+            <td><span id="c-section4">0</span></td>
+
+          </tr>
+          <th colspan="2">其他</th>
+          <tr>
+            <td>技工职业证书:</td>
+            <td><span id="c-section5">0</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- <hr> -->
+    </div>
+
+    <div class="section-d">
+      <!-- <h2>Section D. 其他附加分</h2> -->
+      <div class="bonus short-title">
+        <h3 >附加分项目:</h3>
+        <div class="form-div">
+          <label>加拿大学历: <select id="bonus-edu">
+            <option value="0">无</option>
+            <option value="1">加拿大完成1或2年高等教育</option>
+            <option value="2">加拿大完成3年以上高等教育</option>
+          </select>
+        </label><br>
+        <label>雇主担保: <select id="bonus-offer">
+          <option value="0">无</option>
+          <option value="1">Job offer-NOC 00</option>
+          <option value="2">Job offer-NOC 0, A, B</option>
+        </select>
+      </label> <br>
+      <label>省提名: <select id="bonus-prov">
+        <option value="0">我没有省提名</option>
+        <option value="1">我有省提名</option>
+      </select> </label>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
+  <div class="total-score">
+    <div>
+      <p>核心/人力资本因素总分: <span id="section-a-result">0</span><br>
+      年龄分: <span id="age-score-result">0</span><br>
+      教育分:<span id="edu-score-result">0</span><br>
+      加拿大工作经验分:<span id= "cworkexp-score-result">0</span><br>
+      第一语言成绩分:<span id="lang1-score-result">0</span><br>
+      <!-- 第二语言成绩分: <span id="lang2-score-result">0</span> </p> -->
+    </div>
+    <div>
+      <p class="section-b">配偶加分: <span id="section-b-result">0</span> </p>
+    </div>
+    <div>
+      <p>交叉项加分(满分100): <span id="section-c-result">0</span> </p>
+    </div>
+    <div>
+      <p>附加分项目: <span id="section-d-result">0</span> </p>
+    </div>
+    <div>
+      <p>总分: <span id="final-result">0</span> </p>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

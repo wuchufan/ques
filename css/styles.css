@@ -1,0 +1,100 @@
+body{
+  font-family: Lato,sans-serif;
+
+    margin-bottom: 200px;
+
+}
+h2{
+  font-weight: bold;
+}
+td{
+  vertical-align: baseline;
+}
+
+
+label{
+  display: inline-block;
+  margin: 10px;
+}
+.form-div{
+  text-align: left;
+  margin-left: 40%;
+
+
+
+}
+table{
+  /* width:500px; */
+  margin: auto;
+  border-collapse: collapse;
+  /* border:1px solid #ddd; */
+}
+hr{
+
+  margin-bottom: 0;
+}
+th{
+  height: 40px;
+  color: white;
+  background-color: grey;
+}
+
+td{
+  height: 30px;
+  text-align: center;
+  width: 400px;
+
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+.inner-total-score{
+  position: absolute;
+  right:0;
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+}
+.short-title{
+  padding-right: 100px;
+}
+.total-score{
+
+  position:sticky;
+  display:inline-block;
+  bottom: 20%;
+  color: white;
+  background-color: #103c42;
+
+  height: 300px;
+  width: 300px;
+  text-align: left;
+
+}
+.section-a, .section-b, .section-c, .section-d{
+
+  position:relative;
+  /* bottom: 300px; */
+  margin: auto;
+
+}
+.section-b{
+  display: none;
+}
+.body-container{
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  /* text-align: center; */
+
+}
+
+.mix-form{
+  margin-bottom: 10px;
+
+}
+.marriage{
+  margin-bottom: 2em;
+}
