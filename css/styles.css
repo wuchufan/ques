@@ -10,6 +10,14 @@ h2{
 td{
   vertical-align: baseline;
 }
+select, .text-field{
+  border:1px solid #ccc;
+  background-color: white;
+  height: 30px;
+  color: #555;
+  font-size: 15px;
+  border-radius: 4px;
+}
 
 
 label{
@@ -18,7 +26,7 @@ label{
 }
 .form-div{
   text-align: left;
-  margin-left: 40%;
+  margin-left: 35%;
 
 
 
@@ -57,20 +65,24 @@ td{
 .short-title{
   padding-right: 100px;
 }
+
 .total-score{
 
   position:sticky;
   display:inline-block;
-  bottom: 20%;
-  left: 90%;
+  bottom: 50%;
+  left: 80%;
   color: white;
   background-color: #103c42;
-
-  height: 300px;
-  width: 300px;
-  text-align: left;
+  border-radius: 20px;
+  /* height: 250px; */
+  width: 290px;
+  text-align: center;
+  box-shadow: 10px 10px 5px grey;
 
 }
+
+
 .section-a, .section-b, .section-c, .section-d{
 
   position:relative;
@@ -87,9 +99,9 @@ td{
   left: 30%;
   /* margin:  0 30%; */
   text-align: center;
-  border-color: black;
+  border-color: grey;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
 
 
 }
@@ -100,4 +112,8 @@ td{
 }
 .marriage{
   margin-bottom: 2em;
+}
+
+#final-score{
+  font-weight: bold;
 }
