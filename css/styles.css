@@ -67,7 +67,7 @@ td{
 }
 
 .total-score{
-
+  position: -webkit-sticky;
   position:sticky;
   display:inline-block;
   bottom: 50%;
