@@ -62,8 +62,8 @@ td{
   width: 100px;
   background-color: grey;
 }
-.short-title{
-  padding-right: 100px;
+.sp-fl{
+  margin-left:-20%;
 }
 
 .total-score{
@@ -113,7 +113,13 @@ td{
 .marriage{
   margin-bottom: 2em;
 }
-
+.lb{
+  margin-top:5%;
+}
+.ad-div{
+  margin-left:30%;
+  text-align:left;
+}
 #final-score{
   font-weight: bold;
 }
