@@ -123,3 +123,9 @@ td{
 #final-score{
   font-weight: bold;
 }
+/* tooltip */
+.tooltip{
+  height:15px;
+  width:15px;
+  border-radius: 100%;
+}
