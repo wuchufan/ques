@@ -96,8 +96,8 @@ td{
 .body-container{
   display: inline-block;
   position: relative;
-  left: 30%;
-  /* margin:  0 30%; */
+
+  margin:  0 12%;
   text-align: center;
   border-color: grey;
   border-style: solid;
