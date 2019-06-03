@@ -537,3 +537,9 @@ function updateBonusProv(){
   var optionValue = $("#bonus-prov").val();
   return bonusScore3[optionValue];
 }
+
+//Chinese to English helper Popup html
+
+// $(".check").click(function(){
+//   var href = $(this).attr("href");
+// window.open(href,"newwindow",'width=600,height=400')});
