@@ -483,7 +483,7 @@ function updateMixedScores(){
     }
   }
   $("#c-section4").text(sectionScore[1][1]);
-  //Skill-Cre column:
+  //Certificate of qualification column:
   if (optionValueLi >= 2 && optionValueSp >= 2 && optionValueRe >= 2 && optionValueWr >= 3 && optionValueSkillCre == 1){
     if (optionValueLi >= 4 && optionValueSp >= 4 && optionValueRe >= 6 && optionValueWr >= 5){
       sectionScore[2][0]=50;
