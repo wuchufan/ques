@@ -1,0 +1,10 @@
+.express-entry img{
+  /* width:100%; */
+  margin-bottom: 1rem;
+}
+.express-entry p{
+font-family: 'News Cycle', sans-serif;
+}
+.jumbotron{
+  background-color: #ecfcff;
+}
