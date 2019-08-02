@@ -196,7 +196,7 @@
 
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 section-b">
           <h4 class="mb-3">配偶加分 (Spouse factors):</h4>
           <label for="q2a">配偶教育加分 (Spouse factors bonus):</label>
           <select id="q2a" class="custom-select d-block w-100 mb-3">
@@ -304,8 +304,8 @@
             <div class="col-md-6 mb-3">
               <label>技工职业证书 (Certificate of qualification): </label>
               <select class="lb custom-select d-block w-100 mb-3" id="ques-sc2">
-                <option value="0">I have Certificate of qualification</option>
-                <option value="1">I don't have Certificate of qualification</option>
+                <option value="0">I don't have Certificate of qualification</option>
+                <option value="1">I have Certificate of qualification</option>
 
               </select>
             </div>
@@ -333,10 +333,11 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <label>省提名 (Nomination certificate from a province or territory):</label>
-              <select class="lb custom-select d-block w-100 mb-3" id="bonus-prov">
-                <option value="0">I don't have Nomination certificate</option>
-                <option value="1">I have Nomination certificate</option>
+              <label >雇主担保(Job offer supported by a Labour Market Impact Assessment): </label>
+                <select class="lb custom-select d-block w-100 mb-3" id="bonus-offer">
+                <option value="0">None</option>
+                <option value="1">Job offer-NOC 00</option>
+                <option value="2">Job offer-NOC 0, A, B</option>
               </select>
 
             </div>
@@ -346,13 +347,34 @@
 
 
 
-
-
-
-        <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Calculate your score</button>
         <!-- </form> -->
       </div>
+    </div>
+    <div class="total-score">
+      <div>
+        <p>核心/人力资本因素总分: <span id="section-a-result">0</span><br>
+        年龄分: <span id="age-score-result">0</span><br>
+        教育分:<span id="edu-score-result">0</span><br>
+        加拿大工作经验分:<span id= "cworkexp-score-result">0</span><br>
+        第一语言成绩分:<span id="lang1-score-result">0</span><br>
+        <!-- 第二语言成绩分: <span id="lang2-score-result">0</span> </p> -->
+      </div>
+      <div>
+        <p class="section-b">配偶加分: <span id="section-b-result">0</span> </p>
+      </div>
+      <div>
+        <p>交叉项加分(满分100): <span id="section-c-result">0</span> </p>
+      </div>
+      <div>
+        <p>附加分项目: <span id="section-d-result">0</span> </p>
+      </div>
+      <div>
+        <hr>
+        <p id="final-score">总分 (Total score): <span id="final-result">0</span> </p>
+
+      </div>
+
     </div>
     <hr>
   </div>
@@ -368,6 +390,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>

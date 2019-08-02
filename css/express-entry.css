@@ -5,6 +5,9 @@
 .express-entry p{
 font-family: 'News Cycle', sans-serif;
 }
+.section-b{
+  display: none;
+}
 .jumbotron{
   background-color: #ecfcff;
 }
