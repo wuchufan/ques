@@ -176,7 +176,7 @@ bonusScore3[1] = 600;
 //Section A
 $("[name='ques-s01']").click(function(){
   var statusCheck = $(this).val();
-  // console.log(statusCheck);
+
   if (statusCheck == 'married') {
     marriageStatus  = 1;
     $(".section-b").fadeIn();
