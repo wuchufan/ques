@@ -5,15 +5,17 @@
 .express-entry p{
 font-family: 'News Cycle', sans-serif;
 }
+.jumbotron{
+  background-color: #ecfcff;
+}
+
 .section-b{
   display: none;
 }
 .total-score{
   display:none;
 }
-.calculate{
-  color:white !important
-}
-.jumbotron{
-  background-color: #ecfcff;
+
+.calculator{
+  display:none;
 }

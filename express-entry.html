@@ -51,7 +51,7 @@
 
 
 
-    <div class="container">
+    <div class="container mb-4">
       <div class="express-entry">
         <img src="images/flag.png">
         <h2>Express Entry Overview</h2>
@@ -62,15 +62,19 @@
           necessary for successful immigration and settlement in Canada. Those factors include language ability, education, work experience and relevant work skills, among others. Candidates with top scores receive an invitation to apply (ITAs).
 
           Second, once they receive an ITA, the candidates submit an extensive application package that will be evaluated by the Canadian government. Successful applicants will be able to become Canadian Permanent Residents.</p>
+        <!-- </div> -->
+        <hr>
+
+        <h2>Calculator your score</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+          risus.</p>
+        <a class="btn btn-secondary" role="button" href=#calculator onClick="$('.calculator').fadeIn()">Start calculate »</a>
       </div>
-      <hr>
-
-
-
     </div> <!-- /container -->
 
   </main>
-  <div class="container">
+  <div class="container calculator" id="calculator">
+    <hr>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="images/survey.png" width="64" height="64">
       <h2>Express Entry Score Calculator</h2>
@@ -333,8 +337,8 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <label >雇主担保(Job offer supported by a Labour Market Impact Assessment): </label>
-                <select class="lb custom-select d-block w-100 mb-3" id="bonus-offer">
+              <label>雇主担保(Job offer supported by a Labour Market Impact Assessment): </label>
+              <select class="lb custom-select d-block w-100 mb-3" id="bonus-offer">
                 <option value="0">None</option>
                 <option value="1">Job offer-NOC 00</option>
                 <option value="2">Job offer-NOC 0, A, B</option>
@@ -343,32 +347,39 @@
             </div>
           </div>
         </div>
-        <a class="btn btn-primary btn-lg btn-block calculate" onClick="$('.total-score').fadeIn();">Calculate your score</a>
+        <a class="btn btn-primary btn-lg btn-block calculate mb-4" href="#total-score" onClick="$('.total-score').fadeIn();">Calculate your score</a>
+        <div class="total-score" id="total-score">
+          <hr>
+          <div class="card ">
+            <h5 class="card-header">Score</h5>
+            <div class="card-body">
+              <!-- <div> -->
+              <div>
+                <p>核心/人力资本因素总分: <span id="section-a-result">0</span><br>
+                  年龄分: <span id="age-score-result">0</span><br>
+                  教育分:<span id="edu-score-result">0</span><br>
+                  加拿大工作经验分:<span id="cworkexp-score-result">0</span><br>
+                  第一语言成绩分:<span id="lang1-score-result">0</span><br>
+                  <!-- 第二语言成绩分: <span id="lang2-score-result">0</span> </p> -->
+              </div>
+              <div>
+                <p class="section-b">配偶加分: <span id="section-b-result">0</span> </p>
+              </div>
+              <div>
+                <p>交叉项加分(满分100): <span id="section-c-result">0</span> </p>
+              </div>
+              <div>
+                <p>附加分项目: <span id="section-d-result">0</span> </p>
+              </div>
+              <div>
+                <hr>
+                <p id="final-score">总分 (Total score): <span id="final-result">0</span> </p>
 
-        <div class="total-score">
-          <div>
-            <p>核心/人力资本因素总分: <span id="section-a-result">0</span><br>
-            年龄分: <span id="age-score-result">0</span><br>
-            教育分:<span id="edu-score-result">0</span><br>
-            加拿大工作经验分:<span id= "cworkexp-score-result">0</span><br>
-            第一语言成绩分:<span id="lang1-score-result">0</span><br>
-            <!-- 第二语言成绩分: <span id="lang2-score-result">0</span> </p> -->
-          </div>
-          <div>
-            <p class="section-b">配偶加分: <span id="section-b-result">0</span> </p>
-          </div>
-          <div>
-            <p>交叉项加分(满分100): <span id="section-c-result">0</span> </p>
-          </div>
-          <div>
-            <p>附加分项目: <span id="section-d-result">0</span> </p>
-          </div>
-          <div>
-            <hr>
-            <p id="final-score">总分 (Total score): <span id="final-result">0</span> </p>
+              </div>
 
+              <!-- </div> -->
+            </div>
           </div>
-
         </div>
 
 
@@ -378,9 +389,7 @@
 
   </div>
 
-  <footer class="container">
-    <p>&copy; Company 2017-2019</p>
-  </footer>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script>
     window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
