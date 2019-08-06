@@ -176,7 +176,7 @@ bonusScore3[1] = 600;
 //Section A
 $("[name='ques-s01']").click(function(){
   var statusCheck = $(this).val();
-  console.log(statusCheck);
+
   if (statusCheck == 'married') {
     marriageStatus  = 1;
     $(".section-b").fadeIn();
@@ -256,6 +256,7 @@ function updateScores(){
   var sectionCScore = updateSectionCScore();
   var sectionDScore = updateSectionDScore();
   var totalScore = sectionAScore + sectionCScore +sectionDScore + sectionBScore;
+  console.log(sectionAScore,sectionBScore,sectionCScore,sectionDScore);
   if (marriageStatus ==1){
     $("#final-result").text(totalScore);
   } else{
@@ -294,6 +295,7 @@ function updateSectionDScore(){
   var bonusEduResult = updateBonusEdu();
   var bonusOfferResult = updateBonusOffer();
   var bonusProvResult = updateBonusProv();
+  // console.log(bonusEduResult,bonusOfferResult,bonusProvResult);
 
   $("#section-d-result").text(bonusEduResult+bonusOfferResult+bonusProvResult);
   return bonusEduResult+bonusOfferResult+bonusProvResult;
@@ -513,7 +515,7 @@ function updateMixedScores(){
   if (sectionTotalScore > 100){
     sectionTotalScore = 100;
   }
-  console.log("sectionTotalScore:" + sectionTotalScore);
+  // console.log("sectionTotalScore:" + sectionTotalScore);
   return sectionTotalScore;
 }
 
@@ -525,6 +527,7 @@ function updateMixedScores(){
 
 function updateBonusEdu(){
   var optionValue = $("#bonus-edu").val();
+
   return bonusScore1[optionValue];
 }
 
@@ -537,9 +540,3 @@ function updateBonusProv(){
   var optionValue = $("#bonus-prov").val();
   return bonusScore3[optionValue];
 }
-
-//Chinese to English helper Popup html
-
-// $(".check").click(function(){
-//   var href = $(this).attr("href");
-// window.open(href,"newwindow",'width=600,height=400')});
