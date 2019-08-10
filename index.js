@@ -540,3 +540,14 @@ function updateBonusProv(){
   var optionValue = $("#bonus-prov").val();
   return bonusScore3[optionValue];
 }
+
+//DOM Events
+$("a[href^='#total-score']").click(function(event){
+
+  $('.total-score').fadeIn();
+  // event.preventDefault();
+  var position = $($(this).attr("href")).offset().top;
+  $("body,html").animate({
+    scrollTop:position
+  },500);
+});
